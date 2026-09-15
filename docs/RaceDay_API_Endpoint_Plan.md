@@ -78,3 +78,7 @@ It identifies the HTTP method, route, purpose, required role, request body
 
 and expected response for each planned operation.
 
+
+## Authentication Planning
+
+Authentication endpoints are planned to support user registration, login and authenticated access to protected resources.
