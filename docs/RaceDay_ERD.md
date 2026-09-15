@@ -1,15 +1,15 @@
 # RaceDay ERD — Part 1
 
 This ERD is the planned relational data model for RaceDay. The SQL script in
-`RaceDay\_Database.sql` implements these entities and relationships.
+`RaceDay\\\_Database.sql` implements these entities and relationships.
 
 ```mermaid
 erDiagram
     USERS ||--o{ EVENTS : organises
-    EVENTS ||--o{ EVENT\_CATEGORIES : offers
-    CATEGORIES ||--o{ EVENT\_CATEGORIES : contains
+    EVENTS ||--o{ EVENT\\\_CATEGORIES : offers
+    CATEGORIES ||--o{ EVENT\\\_CATEGORIES : contains
     USERS ||--o{ ENROLMENTS : makes
-    EVENT\_CATEGORIES ||--o{ ENROLMENTS : receives
+    EVENT\\\_CATEGORIES ||--o{ ENROLMENTS : receives
     ENROLMENTS ||--o| RESULTS : has
 
     USERS {
@@ -40,7 +40,7 @@ erDiagram
         string Description
     }
 
-    EVENT\_CATEGORIES {
+    EVENT\\\_CATEGORIES {
         int EventCategoryId PK
         int EventId FK
         int CategoryId FK
@@ -84,4 +84,42 @@ erDiagram
 * \- One participant can have many enrolments.
 * \- One event-category can have many enrolments.
 * \- An enrolment can have zero or one result.
+
+\## Data Dictionary
+
+
+
+\### Users
+
+Stores system users and their roles.
+
+
+
+\### Events
+
+Stores event information created by organisers.
+
+
+
+\### Categories
+
+Stores the race categories available in the system.
+
+
+
+\### EventCategories
+
+Connects events to their available categories.
+
+
+
+\### Enrolments
+
+Stores participant registrations for event categories.
+
+
+
+\### Results
+
+Stores finishing/result information for completed enrolments.
 
