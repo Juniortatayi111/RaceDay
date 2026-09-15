@@ -53,3 +53,7 @@ Part 1 includes:
 ## Database
 
 The planned database uses SQL Server and contains Users, Events, Categories, EventCategories, Enrolments and Results.
+
+## API Planning
+
+The API plan covers authentication, user profiles, events, categories, event enrolments and results.
