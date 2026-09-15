@@ -157,3 +157,17 @@ SELECT * FROM EventCategories;
 SELECT * FROM Enrolments;
 SELECT * FROM Results;
 GO
+
+-- ============================================================
+-- Verification Queries
+-- ============================================================
+-- Use these queries after execution to verify the seeded data.
+
+USE RaceDay;
+
+SELECT * FROM Users;
+SELECT * FROM Events;
+SELECT * FROM Categories;
+SELECT * FROM EventCategories;
+SELECT * FROM Enrolments;
+SELECT * FROM Results;
