@@ -57,3 +57,7 @@ The planned database uses SQL Server and contains Users, Events, Categories, Eve
 ## API Planning
 
 The API plan covers authentication, user profiles, events, categories, event enrolments and results.
+
+## Continuous Integration
+
+GitHub Actions validates that the required Part 1 documentation and database files exist in the repository.
