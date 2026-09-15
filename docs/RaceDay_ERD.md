@@ -1,15 +1,15 @@
 # RaceDay ERD — Part 1
 
 This ERD is the planned relational data model for RaceDay. The SQL script in
-`RaceDay_Database.sql` implements these entities and relationships.
+`RaceDay\_Database.sql` implements these entities and relationships.
 
 ```mermaid
 erDiagram
     USERS ||--o{ EVENTS : organises
-    EVENTS ||--o{ EVENT_CATEGORIES : offers
-    CATEGORIES ||--o{ EVENT_CATEGORIES : contains
+    EVENTS ||--o{ EVENT\_CATEGORIES : offers
+    CATEGORIES ||--o{ EVENT\_CATEGORIES : contains
     USERS ||--o{ ENROLMENTS : makes
-    EVENT_CATEGORIES ||--o{ ENROLMENTS : receives
+    EVENT\_CATEGORIES ||--o{ ENROLMENTS : receives
     ENROLMENTS ||--o| RESULTS : has
 
     USERS {
@@ -40,7 +40,7 @@ erDiagram
         string Description
     }
 
-    EVENT_CATEGORIES {
+    EVENT\_CATEGORIES {
         int EventCategoryId PK
         int EventId FK
         int CategoryId FK
@@ -68,10 +68,20 @@ erDiagram
 
 ## Relationship decisions
 
-- One Organiser can organise many Events; each Event has one Organiser.
-- An Event can offer many Categories, and a Category can be offered by many Events.
-  `EventCategories` resolves this many-to-many relationship.
-- One Participant can have many Enrolments; each Enrolment belongs to one Participant.
-- One Event Category can have many Enrolments; each Enrolment selects one Event Category.
-- An Enrolment can have zero or one Result, allowing results to be captured after an event.
-- `Users.Role` separates the two required roles: `Organiser` and `Participant`.
+* One Organiser can organise many Events; each Event has one Organiser.
+* An Event can offer many Categories, and a Category can be offered by many Events.
+`EventCategories` resolves this many-to-many relationship.
+* One Participant can have many Enrolments; each Enrolment belongs to one Participant.
+* One Event Category can have many Enrolments; each Enrolment selects one Event Category.
+* An Enrolment can have zero or one Result, allowing results to be captured after an event.
+* `Users.Role` separates the two required roles: `Organiser` and `Participant`.
+* \## Relationship Summary
+* 
+* \- One organiser can create many events.
+* \- One event can contain many categories.
+* \- One category can belong to many events.
+* \- EventCategories resolves the many-to-many relationship between Events and Categories.
+* \- One participant can have many enrolments.
+* \- One event-category can have many enrolments.
+* \- An enrolment can have zero or one result.
+
