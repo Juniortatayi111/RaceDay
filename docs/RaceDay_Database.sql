@@ -5,6 +5,13 @@
 RaceDay - Part 1 SQL Database Script
 Target: Microsoft SQL Server / SSMS
 The tables below match the ERD in docs/RaceDay_ERD.md.
+-- Database design includes:
+-- Users
+-- Events
+-- Categories
+-- EventCategories
+-- Enrolments
+-- Results
 */
 
 IF DB_ID('RaceDay') IS NULL
