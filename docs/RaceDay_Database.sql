@@ -1,4 +1,7 @@
 /*
+-- RaceDay Part 1 Database Script
+-- Creates the RaceDay database and supporting tables.
+-- Includes primary keys, foreign keys, constraints and seed data.
 RaceDay - Part 1 SQL Database Script
 Target: Microsoft SQL Server / SSMS
 The tables below match the ERD in docs/RaceDay_ERD.md.
