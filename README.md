@@ -61,3 +61,7 @@ The API plan covers authentication, user profiles, events, categories, event enr
 ## Continuous Integration
 
 GitHub Actions validates that the required Part 1 documentation and database files exist in the repository.
+
+## Part 1 Repository Structure
+
+The repository contains the project README, planning documents, ERD documentation, API endpoint plan, SQL Server database script and GitHub Actions workflow.
