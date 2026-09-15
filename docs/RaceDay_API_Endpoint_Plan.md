@@ -48,3 +48,23 @@ Planned for Part 2. No API code is included in Part 1.
 
 \- Public: can view publicly available event information.
 
+
+
+\## Common HTTP Responses
+
+
+
+\- 200 OK: Request completed successfully.
+
+\- 201 Created: A new resource was created.
+
+\- 400 Bad Request: The request contains invalid information.
+
+\- 401 Unauthorized: Authentication is required or invalid.
+
+\- 403 Forbidden: The authenticated user does not have permission.
+
+\- 404 Not Found: The requested resource does not exist.
+
+
+
