@@ -49,3 +49,7 @@ Part 1 includes:
 
 \- GitHub Actions repository validation
 
+
+## Database
+
+The planned database uses SQL Server and contains Users, Events, Categories, EventCategories, Enrolments and Results.
