@@ -178,3 +178,6 @@ SELECT * FROM Categories;
 SELECT * FROM EventCategories;
 SELECT * FROM Enrolments;
 SELECT * FROM Results;
+
+-- Database integrity is maintained using primary keys, foreign keys,
+-- unique constraints and appropriate required fields.
