@@ -82,3 +82,7 @@ and expected response for each planned operation.
 ## Authentication Planning
 
 Authentication endpoints are planned to support user registration, login and authenticated access to protected resources.
+
+## API Security
+
+Protected endpoints require an authenticated user and role-based access is used to restrict organiser, participant and administrator operations.
