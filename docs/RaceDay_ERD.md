@@ -123,3 +123,10 @@ Stores participant registrations for event categories.
 
 Stores finishing/result information for completed enrolments.
 
+
+## Design Assumptions
+
+- Each event has one organiser.
+- Participants register through enrolments.
+- Categories are reusable across events through EventCategories.
+- Results are associated with completed enrolments.
