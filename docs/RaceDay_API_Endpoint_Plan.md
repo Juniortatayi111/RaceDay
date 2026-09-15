@@ -68,3 +68,13 @@ Planned for Part 2. No API code is included in Part 1.
 
 
 
+\## Planning Purpose
+
+
+
+This endpoint plan defines the proposed API structure before implementation.
+
+It identifies the HTTP method, route, purpose, required role, request body
+
+and expected response for each planned operation.
+
